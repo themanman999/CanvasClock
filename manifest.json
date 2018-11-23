@@ -1,12 +1,12 @@
 {
   "name": "PWA_2",
-  "short_name": "PWA_@",
+  "short_name": "PWA_2",
   "description":"PWA Study",
-  "lang": "zh-TW",
+  "lang":"en-GB",
   "start_url": "https://themanman999.github.io/PWA_2",
   "display": "standalone",
-   "theme_color":"#E6E6FA",
-   "background_color":"#E6E6FA",
+  "theme_color":"#E6E6FA",
+  "background_color":"#E6E6FA",
   "icons": [
     {
       "src": "images/logo.png",
