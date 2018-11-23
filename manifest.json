@@ -1,0 +1,14 @@
+{
+  "name": "PWA_2",
+  "short_name": "PWA_@",
+  "lang": "zh-TW",
+  "start_url": "https://themanman999.github.io/PWA_2",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "image/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
