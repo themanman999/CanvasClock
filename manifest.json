@@ -5,11 +5,11 @@
   "lang":"en-GB",
   "start_url": "https://themanman999.github.io/PWA_2",
   "display": "standalone",
-  "theme_color":"#E6E6FA",
-  "background_color":"#E6E6FA",
+  "theme_color":"#359982",
+  "background_color":"#359982",
   "icons": [
     {
-      "src": "images/logo.png",
+      "src": "icons/logo.png",
       "sizes": "512x512",
       "type": "image/png"
     }
