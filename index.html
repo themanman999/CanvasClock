@@ -2,19 +2,18 @@
 <html lang="en">
 <head>
     <title>PWA 2</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#317EFB"/>
-	<link rel="manifest" href="manifest.json">
+		<link rel="manifest" href="manifest.json">
 
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="application-name" content="PWA_@">
-<meta name="apple-mobile-web-app-title" content="PWA_@">
-<meta name="msapplication-starturl" content="https://themanman999.github.io/PWA_2">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="application-name" content="PWA_@">
+		<meta name="apple-mobile-web-app-title" content="PWA_@">
+		<meta name="msapplication-starturl" content="https://themanman999.github.io/PWA_2">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="icon" type="image/png" sizes="512x512" href="image/logo.png">
-<link rel="apple-touch-icon" type="image/png" sizes="512x512" href="image/logo.png">
+		<link rel="icon" type="image/png" sizes="512x512" href="image/logo.png">
+		<link rel="apple-touch-icon" type="image/png" sizes="512x512" href="image/logo.png">
     <style type="text/css">
 	    body {
 	    	margin: 0 auto;
@@ -22,10 +21,20 @@
 	    	text-align: center;
 	    }
     </style>
-    <script type="text/javascript">
-    	//document.getElementById("canvas").style.width = width;
-    	//document.getElementById("canvas").style.height = height;
-    </script>
+		<script>
+			if ("serviceWorker" in navigator) { 
+			  window.addEventListener("load", function() {   
+			    navigator.serviceWorker.register("sw.js").then(
+			      function(registration) { 
+			        // Registration was successful
+			        console.log("ServiceWorker registration successful with scope: ", registration.scope); }, 
+			      function(err) { 
+			        // registration failed :( 
+			        console.log("ServiceWorker registration failed: ", err); 
+			      }); 
+			  });
+			}
+		</script>
 </head>
 <body>
     <canvas id="canvas" width="350" height="350"></canvas>
