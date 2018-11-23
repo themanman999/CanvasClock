@@ -39,9 +39,9 @@
             var s = date.getSeconds();
             var ms = date.getMilliseconds();
             // Calculate percentage to be drawn
-            var hp = 100 / 12 * (h % 12);
-            var mp = 100 / 60 * m;
-            var sp = 100 / 60 * s;
+            var hp = 100 / (12*60) * (((h % 12)*60)+m);
+            var mp = 100 / 3600 * ((m*60)+s);
+            var sp = 100 / 60000 * ((s*1000)+ms);
             var msp = 100 / 1000 * ms;
             // Ensure double digits
             h = h < 10 ? '0' + h : h;
