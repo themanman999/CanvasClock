@@ -1,9 +1,9 @@
 {
-  "name": "PWA_2",
-  "short_name": "PWA_2",
-  "description":"PWA Study",
+  "name": "CanvasClock",
+  "short_name": "CanvasClock",
+  "description":"Canvas Clock",
   "lang":"en-GB",
-  "start_url": "https://themanman999.github.io/PWA_2/",
+  "start_url": "https://themanman999.github.io/CanvasClock/",
   "display": "standalone",
   "theme_color":"#359982",
   "background_color":"#359982",
